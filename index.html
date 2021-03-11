@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ranking: Tailwind</title>
+    <meta name="description" content="description here">
+    <meta name="keywords" content="keywords,here">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+          integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link href="https://unpkg.com/tailwindcss@next/dist/tailwind.min.css" rel="stylesheet">
+    <!--Replace with your tailwind.css once created-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"
+            integrity="sha256-XF29CBwU1MWLaGEnsELogU6Y6rcc5nCkhhx89nFMIDQ=" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body class="bg-gray-100 font-sans leading-normal tracking-normal">
+
+<nav id="header" class="bg-white fixed w-full z-10 top-0 shadow">
+
+
+    <div class="w-full container mx-auto flex flex-wrap items-center mt-0 pt-3 pb-3 md:pb-0">
+
+        <div class="pl-2 md:pl-0 pb-3">
+            <a class="text-gray-900 text-base xl:text-xl no-underline hover:no-underline font-bold" href="#">
+                <i class="fas fa-solar-panel text-pink-600 pr-3"></i> Ranking
+            </a>
+        </div>
+
+    </div>
+</nav>
+
+<!--Container-->
+<div class="container w-full mx-auto pt-20" id="div-general">
+
+    <div class="w-full px-4 md:px-0 md:mt-8 mb-16 text-gray-800 leading-normal">
+
+        <!--Console Content-->
+
+        <!--Team Number-->
+        <div id="error1"><strong class="text-red-500">The number of teams must be even</strong></div>
+
+        <div class="flex flex-wrap  div-teamnumber">
+            <div class="w-full p-3">
+                <!--Metric Card-->
+                <div class="bg-white border rounded shadow p-2">
+
+                    <div class="flex flex-row items-center">
+                        <div class="flex-1 text-right md:text-center">
+                            <h5 class="font-bold uppercase text-gray-500">Team Number</h5>
+                            <input id="in-teamnumber" type="number" class="rounded p-5 text-black-500 bg-gray-300"/>
+                            <button id="btn-teamnumber" class="rounded p-5 bg-green-600 text-white">Submit</button>
+                        </div>
+                    </div>
+                </div>
+                <!--/Metric Card-->
+            </div>
+
+        </div>
+        <!--Team Number-->
+
+
+        <!--Team Name-->
+
+        <div id="alr-teamname" class="flex flex-wrap">
+            <div class="w-full p-3">
+                <!--Metric Card-->
+                <strong>Teams :</strong>
+                <p id="p-teamname"></p>
+                <!--/Metric Card-->
+            </div>
+
+        </div>
+
+        <div class="flex flex-wrap div-teamname">
+            <div class="w-full p-3">
+                <!--Metric Card-->
+                <div class="bg-white border rounded shadow p-2">
+                    <div class="flex flex-row items-center">
+                        <div class="flex-1 text-right md:text-center">
+                            <h5 id="lb-teamname" class="font-bold uppercase text-gray-500">Team Name</h5>
+                            <input type="text" id="in-teamname" class="rounded p-5 text-balck-500 bg-gray-300"/>
+                            <button id="btn-teamname" class="rounded p-5 bg-green-400 text-white">Submit</button>
+                            <button id="btn-showranking" class="rounded p-5 bg-green-200 text-white">Show Standing
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!--/Metric Card-->
+            </div>
+
+        </div>
+
+        <!--Team Name-->
+        <!--Table-->
+        <!--Table-->
+
+        <!--/ Console Content-->
+
+    </div>
+
+
+</div>
+<!--/container-->
+
+<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<script src="js/custom.js"></script>
+
+</body>
+
+</html>
